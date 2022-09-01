@@ -5,7 +5,7 @@ let cont = 1;
 let scrollMax=0;
 let scrolling = false
 let scrollDown = false
-let lengthArray = 25 
+let lengthArray = 10
 //let contadorIntervalo = 0
 
 console.log(window.innerWidth);
