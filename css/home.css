@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Denk One', sans-serif;
     
     box-sizing: border-box;
 }
@@ -13,6 +13,8 @@ FONT
 
 font-family: 'Anton', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'Alatsi', sans-serif;
+font-family: 'Denk One', sans-serif;
 
 BLUE background-color:  #cbe3f3;
 */
@@ -81,9 +83,10 @@ BLUE background-color:  #cbe3f3;
     right: 50px;
     display: inline-block;
     z-index: 10;
-    animation: appearFromRight 3.4s;
+    animation: appearFromRight 2.4s;
     opacity: 0.6;
     width:min-content;
+    
 
 }
 
@@ -111,21 +114,25 @@ BLUE background-color:  #cbe3f3;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;/*proporcionales*/
     transition: 0.6s;
+    margin-left:auto;
+    margin-right: 0;
 }
 
 
 .change .bar1 {
-    width: 50vw;
+    
     background-color: rgba(255, 255, 255, 0.712);
+    transform: rotate(45deg);
+    transform: translate(0,12px) rotate(45deg);
 
   }
   .change .bar2 {
-    width: 50vw;
+    width: 0;
     background-color: rgba(255, 255, 255, 0.712);
 
   }
   .change .bar3 {
-    width: 50vw;
+    transform: translate(0,-12px) rotate(-45deg);
     background-color: rgba(255, 255, 255, 0.712);
 
   }
@@ -134,29 +141,35 @@ BLUE background-color:  #cbe3f3;
 .menu-container-items{
     visibility: hidden;
     width: 100%;
-    background-color: rgba(250, 128, 114, 0.466);
+    /*background-color: rgba(250, 128, 114, 0.466);*/
+    background-color: rgba(109, 109, 109, 0.432);
     
 }
 
 .menu-links{
     text-decoration: none;
     color: black;
-    width:min-content;
+    width:100%;
+    font-size: 20px;
 }
 
 .menu-links:hover{
     color: rgba(31, 18, 18, 0.877);
     transition: 0.2s;
+    
 }
 
 
 .change .menu-container-items {
     visibility: visible;
     animation: displayDown 0.6s;
-    height: 500px;
+    height: 300px;
+    width:400px;
     transform: translate(0,0px);
     opacity: 1;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
 }
 
 @keyframes displayDown {
@@ -167,7 +180,7 @@ BLUE background-color:  #cbe3f3;
         height:0;
     } 
     100% {
-        height:500px;
+        height:300px;
     }
     
 }
@@ -176,15 +189,27 @@ BLUE background-color:  #cbe3f3;
 .change .menu-container-items .menu-categorias{
     
     padding-left: 10%;
-    padding-top: 10%;
-    font-size: 40px;
+    
+    
     
     position: inherit;
-    width: fit-content;
-    height: max-content;
+    width:max-content;
+    height:min-content;
     overflow: hidden;
     animation: appear 0.7s;
+    
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+    
+
+    
 }
+
+
 
 @keyframes appear {
     0% {
