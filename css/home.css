@@ -82,8 +82,8 @@ BLUE background-color:  #cbe3f3;
 .menu-icon-container {
     
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 40px;
+    right: 25px;
     display: inline-block;
     z-index: 10;
     animation: appearFromRight 2.4s;
@@ -418,7 +418,26 @@ BLUE background-color:  #cbe3f3;
 
 /* GENERAL RESPONSIVE MOBILE */
 
+@media (max-width: 400px) {
+    .banner-title {
+        font-size: 22px;
+    } 
+     
+    .image-logo-home{
+        height: 60px;
+        width: 60px;
+    } 
+}
+
 @media (max-width: 648px) {
+
+    .change .menu-container-items {
+        
+        width:250px;
+        
+    }
+    
+
     .banner-title {
         font-size: 30px;
     }   
@@ -448,12 +467,3 @@ BLUE background-color:  #cbe3f3;
     }
 }
 
-@media (max-width: 400px) {
-    .banner-title {
-        font-size: 22px;
-    }  
-    .image-logo-home{
-        height: 60px;
-        width: 60px;
-    } 
-}
