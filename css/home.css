@@ -38,8 +38,8 @@ BLUE background-color:  #cbe3f3;
 
 .logo-home {
     position: fixed;
-    top: 25px;
-    left: 25px;
+    top: 3%;
+    left:3%;
     background-color: white;
     border-radius: 50%;
     z-index: 10;
@@ -82,8 +82,8 @@ BLUE background-color:  #cbe3f3;
 .menu-icon-container {
     
     position: fixed;
-    top: 40px;
-    right: 25px;
+    top: 5%;
+    right: 5%;
     display: inline-block;
     z-index: 10;
     animation: appearFromRight 2.4s;
@@ -153,7 +153,7 @@ BLUE background-color:  #cbe3f3;
     text-decoration: none;
     color: black;
     width:100%;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .menu-links:hover{
@@ -166,8 +166,8 @@ BLUE background-color:  #cbe3f3;
 .change .menu-container-items {
     visibility: visible;
     animation: displayDown 0.6s;
-    height: 300px;
-    width:400px;
+    height: 400px;
+    width:540px;
     transform: translate(0,0px);
     opacity: 1;
     display: flex;
@@ -376,7 +376,7 @@ BLUE background-color:  #cbe3f3;
 
 
 .footer-container    {
-    height: 400px;
+    height: 300px;
     background-image: linear-gradient(to top, #0c4164, black);
     display: flex;
    
@@ -385,7 +385,10 @@ BLUE background-color:  #cbe3f3;
 .footer-left{
     padding-left: 8%;
     border-left: 25px solid rgb(189, 189, 189);
+    margin-top: auto;
+    margin-bottom: 3%;
     height: fit-content;
+    
 
 }
 
@@ -418,23 +421,15 @@ BLUE background-color:  #cbe3f3;
 
 /* GENERAL RESPONSIVE MOBILE */
 
-@media (max-width: 400px) {
-    .banner-title {
-        font-size: 22px;
-    } 
-     
-    .image-logo-home{
-        height: 60px;
-        width: 60px;
-    } 
-}
+
 
 @media (max-width: 648px) {
 
     .change .menu-container-items {
         
         width:250px;
-        
+        height:230px;
+    
     }
     
 
@@ -464,6 +459,19 @@ BLUE background-color:  #cbe3f3;
     .footer-p{
         
         font-size: 20px;
+    }
+
+    @media (max-width: 400px) {
+        .banner-title {
+            font-size: 22px;
+        } 
+         
+        .image-logo-home{
+            height: 60px;
+            width: 60px;
+        } 
+    
+       
     }
 }
 
