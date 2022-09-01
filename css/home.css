@@ -436,10 +436,24 @@ BLUE background-color:  #cbe3f3;
         
         font-size: 18px;
     }
+
+    .footer-t{
+
+        font-size: 24px;
+    }
+    
+    .footer-p{
+        
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 400px) {
     .banner-title {
         font-size: 22px;
-    }   
+    }  
+    .image-logo-home{
+        height: 60px;
+        width: 60px;
+    } 
 }
