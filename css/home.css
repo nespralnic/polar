@@ -145,7 +145,7 @@ BLUE background-color:  #cbe3f3;
     visibility: hidden;
     width: 100%;
     /*background-color: rgba(250, 128, 114, 0.466);*/
-    background-color: rgba(70, 69, 69, 0.432);
+    background-color: rgba(70, 69, 69, 0.952);
     
 }
 
@@ -291,6 +291,8 @@ BLUE background-color:  #cbe3f3;
     
 }
 
+/*  c a r d s */
+
 .destacados {
     position: relative;
     background-color: black;
@@ -345,14 +347,17 @@ BLUE background-color:  #cbe3f3;
 .card {
     height: 420px;
     width: 340px;
-    background: linear-gradient(lightgreen,lightpink);
     background: grey;
     border-radius: 8px;
+    overflow: hidden;
+    opacity: 0.7;
+    
    
 }
 
 .card:hover {
     box-shadow: 0 0 10px 1px white;
+    opacity: 1;
 
 }
 
@@ -373,6 +378,21 @@ BLUE background-color:  #cbe3f3;
       opacity: 1;
     }
   }
+
+.card-image{
+    width: 100%;
+    object-fit:cover;
+    
+  /*
+    object-fit:fill;  
+    object-position: center;
+    margin: 0 auto;*/
+}
+
+.card-image:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
 
 
 .footer-container    {
